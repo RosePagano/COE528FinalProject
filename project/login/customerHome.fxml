@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.login.customerHomeController">
+   <children>
+      <Label fx:id="welcomeText" text="Customer Home" />
+      <Label fx:id="balenceText" text="Account Balence:" textFill="#0940eb" />
+      <Label fx:id="levelText" text="Account Level:" textFill="#0940eb" />
+      <Label fx:id="taskMessage" text="Enter a number below to deposit,  withdraw or make an online purchase." textFill="#eb0914" />
+      <TextField fx:id="customerNum" promptText="Enter a number to deposit or withdraw" />
+      <Button mnemonicParsing="false" onAction="#deposit" text="deposit" />
+      <Button mnemonicParsing="false" onAction="#withdraw" text="withdraw" />
+      <Button mnemonicParsing="false" onAction="#makeOnlinePurchase" text="make online purchase" />
+      <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="logout" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
